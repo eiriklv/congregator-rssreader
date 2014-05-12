@@ -1,0 +1,39 @@
+{
+  "name": "congregator-rssreader",
+  "version": "0.1.0",
+  "main": "./lib/index",
+  "description": "RSS reader and parser for Congregator",
+  "bugs": {
+    "url": "http://github.com/eiriklv/congregator-rssreader/issues",
+    "email": "evullum@gmail.com"
+  },
+  "dependencies": {
+    "colors": "0.6.x",
+    "async": "0.7.x",
+    "debug": "0.8.x",
+    "feedparser": "0.16.6",
+    "iconv-lite": "0.2.11",
+    "request": "2.34.0",
+    "cheerio": "0.13.1",
+    "html-entities": "1.0.10",
+    "node-read": "0.1.4"
+  },
+
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eiriklv/congregator-rssreader.git"
+  },
+  "keywords": [
+    "rss",
+    "parser",
+    "atom",
+    "feed"
+  ],
+  "license": "MIT",
+  "author": "Eirik Vullum <evullum@gmail.com> (http://www.evconsult.no/)",
+  "homepage": "https://github.com/eiriklv/congregator-rssreader"
+}
