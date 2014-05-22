@@ -18,7 +18,7 @@ var getFeeds = function (options, callback) {
 };
 
 // RssReader
-var RssReader = require('../lib')();
+var RssReader = require('../lib');
 
 // rss reader/scraper module
 var rssReader = new RssReader({
