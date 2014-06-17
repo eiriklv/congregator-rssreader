@@ -17,10 +17,8 @@ var getFeeds = function (options, callback) {
     callback(null, feeds.filter(isActive));
 };
 
-// RssReader
 var RssReader = require('../lib');
 
-// rss reader/scraper module
 var rssReader = new RssReader({
     getSources: getFeeds,
     handleEntry: handleEntry,
