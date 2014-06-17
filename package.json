@@ -1,6 +1,6 @@
 {
-  "name": "congregator-rssreader",
-  "version": "0.1.0",
+  "name": "rssreader",
+  "version": "1.0.0",
   "main": "./lib/index",
   "description": "RSS reader and parser for Congregator",
   "bugs": {
