@@ -4,7 +4,8 @@ exports = module.exports = [
         origin: 'feed',
         name: 'gamereactor 20 siste nyheter',
         url: 'http://www.gamereactor.no/rss/rss.php?texttype=4',
-        tags: ['technology', 'games'],
+        category: 1,
+        linkref: 'url',
         format: 'desktop',
         body: true,
         template: {
@@ -20,7 +21,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -59,7 +60,8 @@ exports = module.exports = [
         origin: 'feed',
         name: 'spill.no',
         url: 'http://www.spill.no/feed.aspx?list=news',
-        tags: ['technology', 'games'],
+        linkref: 'url',
+        category: 1,
         format: 'desktop',
         body: true,
         template: {
@@ -75,7 +77,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -110,7 +112,8 @@ exports = module.exports = [
         origin: 'feed',
         name: 'gamer.no',
         url: 'http://www.gamer.no/feeds/general.xml',
-        tags: ['technology', 'games'],
+        linkref: 'url',
+        category: 1,
         format: 'desktop',
         body: true,
         template: {
@@ -144,7 +147,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
@@ -167,11 +170,12 @@ exports = module.exports = [
         }
     },
     {
-        active: true,
+        active: false,
         origin: 'feed',
         name: 'hackernews',
         url: 'https://news.ycombinator.com/rss',
-        tags: ['technology', 'games'],
+        linkref: 'url',
+        category: 1,
         format: 'desktop',
         body: true,
         template: {
@@ -203,7 +207,7 @@ exports = module.exports = [
                     ]
                 },
                 {
-                    name: 'link',
+                    name: 'url',
                     type: 'url',
                     required: true,
                     items: [
