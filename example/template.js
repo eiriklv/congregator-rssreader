@@ -170,7 +170,7 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
+        active: true,
         origin: 'feed',
         name: 'hackernews',
         url: 'https://news.ycombinator.com/rss',
