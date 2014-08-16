@@ -183,7 +183,7 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
+        active: true,
         origin: 'feed',
         name: 'TechCrunch',
         url: 'http://feeds.feedburner.com/techCrunch',
@@ -215,7 +215,8 @@ exports = module.exports = [
                     required: true,
                     items: [
                         {
-                            selector: 'title'
+                            selector: 'title',
+                            decode: true
                         }
                     ]
                 },
@@ -243,7 +244,7 @@ exports = module.exports = [
         }
     },
     {
-        active: true,
+        active: false,
         origin: 'feed',
         name: 'Pressfire.no',
         url: 'http://www.pressfire.no/rss/nyheter',
