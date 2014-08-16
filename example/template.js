@@ -154,7 +154,8 @@ exports = module.exports = [
                     required: true,
                     items: [
                         {
-                            selector: 'title'
+                            selector: 'title',
+                            decode: true
                         }
                     ]
                 },
@@ -242,11 +243,12 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
+        active: true,
         origin: 'feed',
         name: 'Pressfire.no',
         url: 'http://www.pressfire.no/rss/nyheter',
         linkref: 'url',
+        charsetOverride: 'utf-8',
         category: ['technology', 'gaming'],
         format: 'desktop',
         body: true,
@@ -274,7 +276,8 @@ exports = module.exports = [
                     required: true,
                     items: [
                         {
-                            selector: 'title'
+                            selector: 'title',
+                            decode: true
                         }
                     ]
                 },
