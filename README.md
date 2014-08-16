@@ -31,7 +31,7 @@ var getFeeds = function (options, callback) {
     callback(null, feeds.filter(isActive));
 };
 
-var RssReader = require('rssreader');
+var RssReader = require('congregator-rssreader');
 
 var rssReader = new RssReader({
     getSources: getFeeds,
@@ -55,7 +55,7 @@ rssReader.run();
     "name": "hackernews",
     "url": "https://news.ycombinator.com/rss",
     "linkref": "url",
-    "category": 1,
+    "category": ['technology', 'hackernews'],
     "format": "desktop",
     "body": true,
     "template": {
@@ -119,7 +119,7 @@ rssReader.run();
         "source": "https://news.ycombinator.com/",
         "host": "news.ycombinator.com",
         "ranking": 24,
-        "category": 1,
+        "category": ['technology', 'hackernews'],
         "guid": "http://blog.ycombinator.com/last-day-to-apply-to-yc-hacks",
         "title": "Last day to apply to YC Hacks",
         "url": "http://blog.ycombinator.com/last-day-to-apply-to-yc-hacks",
