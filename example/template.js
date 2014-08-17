@@ -1,6 +1,6 @@
 exports = module.exports = [
     {
-        active: true,
+        active: false,
         origin: 'feed',
         name: 'TheWireCutter',
         url: 'http://feeds.feedburner.com/TheWirecutter',
@@ -665,12 +665,12 @@ exports = module.exports = [
         }
     },
     {
-        active: false,
+        active: true,
         origin: 'feed',
-        name: 'Inc.com',
-        url: 'http://feeds.inc.com/home/updates',
+        name: 'Entrepreneur.com',
+        url: 'http://feeds.feedburner.com/entrepreneur/latest',
         linkref: 'url',
-        category: ['career', 'inc'],
+        category: ['career', 'entrepreneur'],
         format: 'desktop',
         body: true,
         template: {
@@ -697,7 +697,8 @@ exports = module.exports = [
                     required: true,
                     items: [
                         {
-                            selector: 'title'
+                            selector: 'title',
+                            decode: true
                         }
                     ]
                 },
@@ -718,7 +719,8 @@ exports = module.exports = [
                         {
                             selector: 'enclosures[0].url'
                         }
-                    ]
+                    ],
+                    fallback: 'http://www.entrepreneur.com/assets/img/ent-logo-high.png'
                 }
             ]
         }
