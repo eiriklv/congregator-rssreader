@@ -16,7 +16,7 @@
     "request": "2.34.0",
     "cheerio": "0.13.1",
     "html-entities": "1.0.10",
-    "node-read": "git+https://878c3337f2ae0290ec65e461c1b6f7cc8e26c0c6:x-oauth-basic@github.com/eiriklv/node-read.git"
+    "node-read": "eiriklv/node-read"
   },
 
   "devDependencies": {},
